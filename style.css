@@ -10,9 +10,10 @@ p {
     color: black
 }
 div {
-    background-color: lightgrey;
-    width: 300px;
-    border: 25px solid green;
-    padding: 25px;
-    margin: 25px;
+    border: 16px solid white;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    margin-right: 880px;
+    margin-left: 80px;
+    background-color: white;
 }
