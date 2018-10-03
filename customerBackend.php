@@ -18,13 +18,31 @@ echo "<link rel='stylesheet' type='text/css' href='style.css' />";
   }
 
   $total = $shipm + $apple*0.99 + $pears*1.00 + $peach*2.00;
- if(is_numeric($apple)==false||is_numeric($peach)==false||is_numeric($pears)==false|| empty($user||$pword||$apple||$pears||$peach||$ship))
+  $print = false;
+  for($i=0;$i<strlen($user);$i=$i+1){
+    if($user[$i]=='@'){
+      $print=true;
+
+      break;
+    }
+  }
+  if($print==true){
+    $print=false;
+    for($j=$i;$j<strlen($user);$j=$j+1){
+      if($user[$j]=='.'){
+
+        $print=true;
+        break;
+      }
+    }
+  }
+ if(is_numeric($apple)==false||is_numeric($peach)==false||is_numeric($pears)==false|| empty($user||$pword||$apple||$pears||$peach||$ship)||$print==false)
  {
    echo "<br><h1>Invalid input</h1><br>";
    //echo "<script type='text/javascript' src='exercise3'></script>";
    //echo "<script>window.location = 'https://people.eecs.ku.edu/~n662l546/exercise3.htm'</script>";
  }
- else if(is_numeric($apple)||is_numeric($peach)||is_numeric($pears))
+ else if($print==true)
   {
   echo "Welcome ".$user.", <br><br>Your total is: " .$total. "<br><br>";
   echo "Here is your receipt: <br><br>";
