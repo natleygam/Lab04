@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+</head>
+<html>
+    <head>
+       <link rel="stylesheet" type="text/css" href="style.css">
+       <script type="text/javascript" src="formChecker.js"></script>
+    </head>
+<body>
+<h1>Natalia's Market</h1>
+    <form action="customerBackend.php" method="post" onsubmit="return Checker()">
+
+        Input username: <input type="text" name="username"><br>
+        Input Password: <input type="text" name="pword"><br><br>
+        Which Product would you like to buy?<br>
+        Apples (0.99 per apple):<input type="text" name="apples"><br><br>
+        Pears (per pear) :<input type="text" name="pears"><br><br>
+        Peaches ( per peach) :<input type="text" name="peaches"><br><br>
+        What shipping would you like?<br>
+        <input type="radio" name="ship" value="7day">7 Day Shipping (FREE!)<BR>
+        <input type="radio" name="ship" value="3day">3 Day Shipping ($5.00)<BR>
+        <input type="radio" name="ship" value="overnight">Over-night Shipping ($50.00)<BR>
+
+        <input type="button" onclick="Reset()" value="Reset"><br>
+        <input type="submit"><br><br>
+
+    </form>
+    <!--<?php include 'exercise1.php';?>-->
+<script>
+function Reset(){
+
+  window.location.href = "https://people.eecs.ku.edu/~n662l546/customerFronted.html";
+  //type="text/javascript">location.href = 'https://people.eecs.ku.edu/~n662l546/exercise3.htm';
+}
+
+</script>
+
+</body>
+</html>

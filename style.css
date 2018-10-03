@@ -1,0 +1,18 @@
+
+body {
+    background-color: powderblue;
+    font-size: 20px;
+}
+h1 {
+    color: white;
+}
+p {
+    color: black
+}
+div {
+    background-color: lightgrey;
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
