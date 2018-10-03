@@ -44,7 +44,7 @@ echo "<link rel='stylesheet' type='text/css' href='style.css' />";
  }
  else if($print==true)
   {
-  echo "Welcome ".$user.", <br><br>Your total is: " .$total. "<br><br>";
+  echo "Welcome ".$user.", <br>Password: ".$pword."<br><br>Your total is: " .$total. "<br><br>";
   echo "Here is your receipt: <br><br>";
   echo '<div background-color: lightgrey; width: 300px; border: 25px solid green; padding: 25px;margin: 25px>';
   echo " Item | Quantity | Cost Per Item | Subtotal <br>";
